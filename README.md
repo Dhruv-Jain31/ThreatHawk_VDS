@@ -1,4 +1,4 @@
-# 🛡️ ThreatHawk - Vulnerability Assessment Scanner
+# ThreatHawk - Vulnerability Assessment Scanner
 
 Threat Hawk – Vulnerability Assessment Scanner is an open-source, security tool designed to identify and report vulnerabilities in both web applications and network environments. It combines the capabilities of existing tools like OWASP ZAP and Nmap while introducing enhanced features such as custom vulnerability modules, BFS-based crawling, and pattern matching using the Boyer-Moore algorithm. Built for scalability and ease of use, the scanner leverages modern architectures (Node.js + Flask) and asynchronous task processing via queues to ensure efficient and parallel vulnerability detection. Its modular design supports integration with containerized environments like Kubernetes and OpenStack, enabling flexible deployment across diverse infrastructures.
 Threat Hawk empowers individuals, startups, and enterprises to proactively detect and mitigate security flaws, contributing to a safer digital ecosystem.
@@ -26,14 +26,14 @@ ThreatHawk-Vulnerability-Assessment-Scanner/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 🔧 Prerequisites
 
 - Python 3.8+
 - Node.js (v16+)
-- npm or yarn
-- MongoDB (local or Atlas)
+- npm
+- PostgreSQL (local or hosted on Web)
 - [Prisma](https://www.prisma.io/docs/getting-started)
 
 ---
@@ -130,7 +130,7 @@ ThreatHawk-Vulnerability-Assessment-Scanner/
 
 - ✅ Scan websites for vulnerabilities using OWASP, Nmap, etc.
 - 📊 View scan results in a modern, responsive dashboard
-- 📂 Store and retrieve scan data via Prisma + MongoDB
+- 📂 Store and retrieve scan data
 - 🧠 Supports multiple scan types with real-time feedback
 - 🧾 Exportable reports and severity-based visualization
 
@@ -141,14 +141,12 @@ ThreatHawk-Vulnerability-Assessment-Scanner/
 - **Frontend:** Next.js, Tailwind CSS, React
 - **Backend (API):** Node.js, Express.js, Prisma
 - **Scanner:** Flask, Python
-- **Database:** MongoDB (via Prisma)
-- **Other:** Docker (optional), Postman (for API testing)
+- **Database:** PostgreSQL(via Prisma ORM)
+- **Other:** Docker (for containerisation), Postman (for API testing)
 
 ---
 
 ## 📌 Todo / Coming Soon
-
-- [ ] Auth system (JWT or NextAuth)
 - [ ] Role-based dashboards (admin/user)
 - [ ] Scan history & scheduling
 - [ ] Export scan reports (PDF)
